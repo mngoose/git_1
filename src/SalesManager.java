@@ -1,20 +1,28 @@
 public class SalesManager {
-    protected int[] sales;
+    protected long[] sales;
 
-    public SalesManager(int[] sales) {
+    public SalesManager(long[] sales) {
         this.sales = sales;
     }
 
-    public int min() {
-        int min = Integer.MIN_VALUE;
-        for (int sale : sales) {
+<<<<<<< HEAD
+    public long min() {
+        long min = Long.MAX_VALUE;
+        for (long sale : sales) {
             if (sale < min) {
                 min = sale;
+=======
+    public long max() {
+        long max = -1;
+        for (long sale : sales) {
+            if (sale > max) {
+                max = sale;
+>>>>>>> longer
             }
         }
         return min;
-        int sum = 0;
-        for (int : sale = sales) {
+        long sum = 0;
+        for (long : sale = sales) {
             sum += sale;
         }
         return (sum - min() - max()) / (sales.lenght - 2);

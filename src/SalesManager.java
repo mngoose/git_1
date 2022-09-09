@@ -5,13 +5,21 @@ public class SalesManager {
         this.sales = sales;
     }
 
-    public int max() {
-        int max = -1;
+    public int min() {
+        int min = Integer.MIN_VALUE;
         for (int sale : sales) {
-            if (sale > max) {
-                max = sale;
+            if (sale < min) {
+                min = sale;
             }
         }
-        return max;
+        return min;
+        int sum = 0;
+        for (int : sale = sales) {
+            sum += sale;
+        }
+        return (sum - min() - max()) / (sales.lenght - 2);
+    }
+
+    public int avgTrimmed () {
     }
 }
